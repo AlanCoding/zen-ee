@@ -1,0 +1,26 @@
+---
+name: Build and push images to Github Container Registry
+on:
+  push:
+    branches:
+      - devel
+  schedule:
+    - cron: '* * * * 6'  # Friday
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build zen image
+        run: ansible-builder build --tag=ghcr.io/alancoding/zen-ee
+
+      - name: Push images
+        run: docker push ghcr.io/alancoding/zen-ee
