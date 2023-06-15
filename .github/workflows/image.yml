@@ -26,4 +26,4 @@ jobs:
         run: ansible-builder build --tag=ghcr.io/alancoding/zen-ee
 
       - name: Push images
-        run: docker push ghcr.io/alancoding/zen-ee
+        run: docker push ghcr.io/alancoding/zen-ee:latest
