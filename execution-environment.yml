@@ -1,5 +1,8 @@
 ---
 version: 3
+images:
+  base_image:
+    name: redhat/ubi9
 dependencies:
     ansible_core:
         package_pip: ansible-core
