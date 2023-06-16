@@ -1,6 +1,7 @@
 ---
 title: Image build failed
 assignees: alancoding
+labels: bug
 ---
 Oh no! The image build and push workflow failed!
 
