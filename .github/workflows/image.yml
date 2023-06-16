@@ -27,3 +27,7 @@ jobs:
 
       - name: Push images
         run: docker push ghcr.io/alancoding/zen-ee:latest
+
+      - name: The job has failed
+        uses: JasonEtco/create-an-issue@v2
+        if: ${{ failure() }}
