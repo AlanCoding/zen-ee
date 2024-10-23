@@ -67,6 +67,6 @@ File an issue and `@` me if you want to get those notifications and help maintai
 ### Ansible playbook update
 
 Added `ansible-rulebook` so that this can be used as a Decision Environment.
-Took suggestions from:
+Took suggestions from
 
 https://github.com/kubealex/eda-decision-environment/blob/main/de-builder.yml
