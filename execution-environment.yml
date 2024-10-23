@@ -10,5 +10,7 @@ dependencies:
         package_pip: ansible-core
     ansible_runner:
       package_pip: ansible-runner
+    python:
+      - ansible-rulebook
 options:
   package_manager_path: dnf5

@@ -63,3 +63,10 @@ If it fails, it should file an issue which will fire a github notification.
 The aim is to avoid any scenario where this falls _months_ out of date.
 
 File an issue and `@` me if you want to get those notifications and help maintain.
+
+### Ansible playbook update
+
+Added `ansible-rulebook` so that this can be used as a Decision Environment.
+Took suggestions from:
+
+https://github.com/kubealex/eda-decision-environment/blob/main/de-builder.yml
