@@ -66,7 +66,9 @@ File an issue and `@` me if you want to get those notifications and help maintai
 
 ### Ansible playbook update
 
-Added `ansible-rulebook` so that this can be used as a Decision Environment.
-Took suggestions from
+I abandoned the idea of adding `ansible-rulebook` to this to make it
+also be a Decision Environment.
+This appears to require Java, and I can't think of anything less zen-like.
 
-https://github.com/kubealex/eda-decision-environment/blob/main/de-builder.yml
+As an alternative, I found this [repo](https://github.com/kubealex/eda-decision-environment) to work nicely,
+its image is hosted at [quay.io/kubealex/eda-decision-env](quay.io/kubealex/eda-decision-env).
